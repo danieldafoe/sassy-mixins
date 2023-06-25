@@ -1,0 +1,94 @@
+// User Preferences
+//  Color
+//  Data
+//  Motion
+//  Theme
+//  Transparency
+
+
+
+
+// COLOR
+
+// You're probably unaware, but your "small percentage" of users using Windows have access to a high contrast mode. Your UI elements might lose some colour and therefore some of their usability. Fix that by using this mixin.
+//
+// NOTE: This is a potentially dangerous mixin. Only use this if you know what you're doing. A common technique might be to use a CSS system color to fill an SVG if it doesn't show up.
+@mixin forced-colors {
+  @media (forced-colors: active) {
+    @content;
+  }
+}
+
+// Your light hero image with light-coloured text overlayed on top of it is unreadable at the best of times. Improve it for invert colors users with this mixin.
+@mixin inverted-colors {
+  // This feature, without a value, evaluates to `true`
+  @media (inverted-colors) {
+    @content;
+  }
+}
+
+// Your super light gray label for your form fields and your marketing copy is basically invisible to some people. You may as well not have content at all. Allow people to read your lifeless content; use this mixin.
+@mixin prefers-more-contrast {
+  @media (prefers-contrast: more) {
+    @content;
+  }
+}
+
+// Not everyone wants borders around every element and the 10000:1 contrast ratio high contrast mode usually entails. Some people want to soothe migraines or not have text seem like it shines on its background. Use this mixin.
+@mixin prefers-less-contrast {
+  @media (prefers-contrast: less) {
+    @content;
+  }
+}
+
+
+// DATA
+
+// Your 2MB list-style-image you're using for "fancy" bullets is lame and unnecesary. Use this mixin and use a browser default instead.
+@mixin prefers-reduced-data {
+  // This feature, without a value, evaluates to `true`
+  @media (prefers-reduced-data) {
+    @content;
+  }
+}
+
+
+// MOTION
+
+// Your pulsating, gyrating, undulating UI elements you have floating about your site make some people sick. Literally. Avoid sickness and seizures; use this mixin.
+@mixin prefers-reduced-motion {
+  // This feature, without a value, evaluates to `true`
+  @media (prefers-reduced-motion) {
+    @content;
+  }
+}
+
+
+// THEME
+
+// Your harsh #FFFFFF body background causes eye strain, some people with low vision can't read your content, and some people (for some reason) want to doomscroll your website at 2:00AM. Let them do so; use this mixin.
+@mixin prefers-dark-theme {
+  @media (prefers-color-scheme: dark) {
+    @content;
+  }
+}
+
+// Your always-on dark mode isn't beloved by everyone. In fact, most people with "normal vision" do better with a light mode interface. It helps them focus and read easier, OK? Here's a bright idea: use this mixin.
+@mixin prefers-light-theme {
+  // Future proof for when other keywords like "sepia"
+  // are available besides just "light"
+  @media (not (prefers-color-scheme: dark)) {
+    @content;
+  }
+}
+
+
+// TRANSPARENCY
+
+// Stop making everything see-through. You want people to focus on the task at hand, not what's behind your crap interface. People need to be able to focus and need more contrast. Board your windows; use this mixin.
+@mixin prefers-reduced-transparency {
+  // This feature, without a value, evaluates to `true`
+  @media (prefers-reduced-transparency) {
+    @content;
+  }
+}
