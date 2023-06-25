@@ -2,8 +2,10 @@
   "version": "1.0.0",
   "name": "sassy-mixins",
   "description": "Sass mixins to help you respect user preferences—because you should be. Never write a _mixins.scss again.",
+  "license": "MIT",
   "author": {
     "name": "Daniel Dafoe",
+    "email": "daniel.dafoe@icloud.com",
     "url": "https://danieldafoe.com"
   },
   "repository": {
@@ -11,7 +13,6 @@
     "url": "https://github.com/danieldafoe/sassy-mixins"
   },
   "bugs": {
-    "license": "MIT",
     "url": "https://github.com/danieldafoe/sassy-mixins/issues"
   },
   "keywords": [
