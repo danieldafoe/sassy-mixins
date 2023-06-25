@@ -1,7 +1,7 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "sassy-mixins",
-  "description": "Sass mixins to help you respect user preferences—because you should be. Never write a _mixins.scss again.",
+  "description": "Sass mixins to help you respect user preferences—because you should. Never write a _mixins.scss again.",
   "license": "MIT",
   "author": {
     "name": "Daniel Dafoe",
