@@ -37,7 +37,7 @@ Assuming you're using [Sass](https://sass-lang.com) already, you have two easy s
 npm install -D sassy-mixins
 ```
 
-2. Reference `sassy-mixins/index.scss` in your Sass file and use the mixins. (I recommend namespacing your import so you know which place your mixins come from, but it's not required.)
+2. Reference `sassy-mixins/mixins.scss` in your Sass file and use the mixins. (I recommend namespacing your import so you know which place your mixins come from, but it's not required.)
 
 ```scss
 @use '{path/to/your/node_modules}/sassy-mixins/mixins' as sassy;
