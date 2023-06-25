@@ -1,3 +1,5 @@
+![Sassy Mixins banner, pink background, woman tipping hand emoji swearing](./sassy-mixins.jpg)
+
 # Sassy Mixins
 
 ## Never write a `_mixins.scss` file again.

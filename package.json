@@ -1,5 +1,5 @@
 {
-  "version": "1.0.1",
+  "version": "1.0.3",
   "name": "sassy-mixins",
   "description": "Sass mixins to help you respect user preferences—because you should. Never write a _mixins.scss again.",
   "license": "MIT",
